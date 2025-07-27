@@ -1,3 +1,5 @@
+// DATATYPES
+
 // String -- prefer "" due to better readability
 // Number
 // Boolean-- Represents true or false

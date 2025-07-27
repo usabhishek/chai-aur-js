@@ -1,3 +1,5 @@
+// VARIABLES
+
 const id = 12345;
 var name = "Abhishek"
 let age = 18;
