@@ -63,3 +63,20 @@ function returnlastValue(getArray){
 
 console.log(returnlastValue(myNewArray));
 console.log(returnlastValue([200, 400, 500, 1000]));
+
+// ---------------Ways of declaring function ---------
+// type 1 -function declaration (Hoisted -can be used before declaration)
+function addone(num){
+    return num + 1;
+}
+
+console.log(addone(5))
+
+// type 2 -function expression (not hoisted)- can be anonymous or named
+const addtwo = function(num){
+    return num + 2;
+}
+
+console.log(addtwo(8))
+
+// there are other types of functions like arrow functions , anonymous function, iife, callback, coonstructor and higher order, generator and async function,recursive and rest function etc..
