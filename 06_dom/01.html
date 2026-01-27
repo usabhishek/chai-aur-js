@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-color{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-color">
+    <h1 id="title" class="heading" style="color: red;">Welcome to DOM</h1>
+    <!-- here we worked in existing webpage we draw DOM diagram, we accessed dom element by id ,we worked with innerHTML, we saw window attributes by console.log(window.__), we saw document attribue(window.document) or (document)  -->
+     <p>Lorem ipsum dolor sit amet <span style="display: none;">hidden test</span></p>
+     <!--Then we talked about 
+     document.getelementbyId('title').getAttribute('id');
+     document.getelementbyId('title').getAttribute('class');
+     document.getelementbyId('title').setAttribute('id','id2')
+     document.getelementbyId('title').setAttribute('class','test heading')
+     const title = document.getelementbyId('title');
+     title.style.backgroundColor = 'green'
+     
+     title.getContent => It shows all the content of the page also if hidden 
+     title.innerHTML =>It shows nested HTML if any
+     title.innerText =>It shows only the content of the webpage
+     
+     Then we talked about query selector
+     document.queryselector('h1'); 
+     document.queryselector('#title'); // selection by id
+     document.queryselector('.heading'); //selection by class
+
+     query selector selects only single element and queryselectorAll selects nodelist which is different from array so that we can't directly perform operations like queryselector we have to select a specific index to do it .
+
+     Example--  const mytag = document.queryselectorAll('h1'); //Returns nodelist
+                mytag[0].style.color = 'green';
+
+    Then we talked about getelementbyClassName and how to convert HTML collection to array because we can use forEach in node list but not in HTML collection
+
+    const list = document.getelementbyClassName('list');
+    Array.from(list);
+     -->
+</body>
+</html>
