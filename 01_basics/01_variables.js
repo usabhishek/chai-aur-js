@@ -4,7 +4,7 @@ const id = 12345;
 var name = "Abhishek"
 let age = 18;
 nationality = "Indian"; // It is also allowed but try to minimize its use
-let date; //It gives o/p undefined
+let date; //It gives o/p undefined here because we have not assigned any value to it
 
 
 //id = 55 // Modification in const keyword is not allowed
