@@ -8,7 +8,7 @@ let date; //It gives o/p undefined here because we have not assigned any value t
 
 
 //id = 55 // Modification in const keyword is not allowed
-console.log(id); // Thorws TypeErorr
+console.log(id); // Thorws TypeErorrcls
 
 name = "Hitesh"
 age = 30;

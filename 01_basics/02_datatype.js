@@ -1,11 +1,12 @@
 // Datatype summary
 
 //  Primitive
-//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+//  7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
 const Id = Symbol('124');
 const anotherId = Symbol('124')
 
+console.log(Id)
 // console.log(Id == anotherId) -return false
 // console.log(Id == anotherId)  -returns false
 

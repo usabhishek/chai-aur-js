@@ -1,7 +1,6 @@
 // CONVERSIONS
 
 let score = null;
-
 // console.log(typeof score);
 // console.log(typeof(score));
 
@@ -19,7 +18,7 @@ let valueInNumber = Number(score)
 let isLoggedIn = "hitesh"
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-//  console.log(booleanIsLoggedIn);
+// console.log(booleanIsLoggedIn); //true
 
 // 1 => true; 0 => false
 // "" => false
@@ -27,7 +26,7 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 
 let someNumber = undefined;
 
-// let stringNumber = String(someNumber)
+let stringNumber = String(someNumber)
 // console.log(stringNumber);
 // console.log(typeof stringNumber);
 

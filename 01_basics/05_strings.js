@@ -4,7 +4,7 @@ const name = "Abhishek";
 const repocount = 50;
 
 // console.log(typeof name);
-//console.log(name+repocount+" Value") --this is not a modern/good practise
+// console.log(name+repocount+" Value") // --this is not a modern/good practise
 console.log(`I am ${name} and my repository count is ${repocount}.`); //below the escape-``
 
 

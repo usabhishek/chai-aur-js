@@ -10,18 +10,20 @@ function sayMyName(){
 }
 // sayMyName()
 
-// function addTwoNumbers(number1, number2){
-//     console.log(number1 + number2);
-// }
-
 function addTwoNumbers(number1, number2){
-    // let result = number1 + number2; 
-    // return result;
-    return number1 + number2;
+    console.log(number1 + number2);
 }
 
+
+function addTwoNumbers(number1, number2){
+    let result = number1 + number2; 
+    return result;
+}
+    
+addTwoNumbers(3, 5) // Now it will not print anything because our second function overrides the first function. So, we need to store the return value in a variable and then print it. Otherwise, it will work fine with first function.
+
 const result = addTwoNumbers(3, 5);
-// console.log("Result: ",result);
+// console.log("Result: ",result); // Now it will print the result
 
 function loginuser(username){
     return `hi ${username} How are you ?`
@@ -30,10 +32,12 @@ function loginuser(username){
 // console.log(loginuser("Abhishek"))
 
 function calculateCartPrice(val1, val2, ...num1){
-    return num1;
+    // return num1; // Rest operator is used to get the remaining values in the array. It will return an array of values except first two values.
+    // return typeof num1; -- Return Object
+    return val1 + val2 + num1.reduce((acc, curr) => acc + curr, 0); // reduce method is used to sum up all the values in the array. It takes two parameters - accumulator and current value. It will return the sum of all the values in the array. The second parameter is the initial value of the accumulator. In this case, it is 0. So, it will start with 0 and add all the values in the array to it. Finally, it will return the sum of all the values in the array.
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))
+console.log(calculateCartPrice(200, 500, 500, 2000))
 
 const user = {
     username: "Abhishek",
@@ -45,20 +49,17 @@ function handleObject(anyobject){
 }
 
 handleObject(user)
-
-handleObject({
-    username: "sam",
-    price: 399
-})
-
+handleObject({username: "sam",price: 399})
 // --------------------
+
 const myNewArray = [200, 400, 100, 600];
 
 function returnlastValue(getArray){
     // return getArray[-1];
-    //Output: undefined -Because in JavaScript, arr[-1] means you’re trying to access a property named "-1" (a string key), not the last element. 
+    // Output: undefined -Because in JavaScript, arr[-1] means you’re trying to access a property named "-1" (a string key), not the last element. 
 
-    return getArray[getArray.length - 1];
+    // return getArray[getArray.length - 1]; // Method 1
+    return getArray.at(-1); // Method 2: We can use this for getting the last element in modern JS.
 }
 
 console.log(returnlastValue(myNewArray));
