@@ -1,4 +1,4 @@
-//iife => Immediately Invoked Dunction Expression
+//iife => Immediately Invoked Function Expression
 // Why it is used? --Avoid polluting the global scope(Variables inside iife remains private)
 (function one(){
     const a=5;
