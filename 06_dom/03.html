@@ -9,19 +9,51 @@
     
 </body>
 <script>
-     const div = document.createElement('div');
-     console.log(div);
-     div.className ='test';
-     div.id = 'test_id';
-     div.setAttribute('title','test-title');
-     div.style.padding = "10px";
+    const div = document.createElement('div');
+    console.log(div);
+    div.className ='test';
+    div.id = 'test_id';
+    div.setAttribute('title','test-title');
+    div.style.padding = "10px";
     div.style.backgroundColor = "Yellow";
     div.style.color="black";
 
-     //div.innerHTML='I am learning DOM'
-     const addText = document.createTextNode("I learnt major Javascript already");
-     div.appendChild(addText);
+    //div.innerHTML='I am learning DOM'
+    const addText = document.createTextNode("I learnt major Javascript already");
+    div.appendChild(addText);
 
-     document.body.appendChild(div);
+    document.body.appendChild(div);
+
+
+
+    const append5 = function(color) { 
+    
+    const div2 = document.createElement('div');
+    console.log(div2);
+
+    div2.className = 'test2';
+    div2.id = 'test_id2';
+    div2.setAttribute('title','test-title2');
+    
+    div2.style.padding = "10px";
+    div2.style.backgroundColor = color;
+    div2.style.color = "white";
+    div2.style.marginTop = "10px";
+
+    const testnode2 = document.createTextNode("I am learning DOM");
+    div2.appendChild(testnode2);
+
+    document.body.appendChild(div2);
+}
+
+    const arr = ['Blue', 'Pink', 'Orange', 'Green', 'Red'];
+    for(let i=0; i<5; i++){
+        append5(arr[i]);
+    }
+
+    console.log(div.childNodes); // shows nodelist of size 1
+    console.log(div2.childNodes); // It has nodelist of size 5 but cannot we have Reference error because of the scope of div2 is inside function
+
+    console.log(div.children); // Returns HTML collection of length 0 because it has no child element. Children Only returns HTML elements.
 </script>
 </html>
